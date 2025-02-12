@@ -1,0 +1,28 @@
+digraph "Theater Ticket System" {
+	Customer [label="Customer
+--------------
++ customerID: int {PK}
++ name: string
++ email: string {unique}
++ phoneNumber: string {unique}" shape=rectangle]
+	Ticket [label="Ticket
+--------------
++ ticketID: int {PK}
++ seatNumber: string
++ price: float
++ showTime: datetime" shape=rectangle]
+	Movie [label="Movie
+--------------
++ movieID: int {PK}
++ title: string
++ genre: string
++ duration: int" shape=rectangle]
+	Theater [label="Theater
+--------------
++ theaterID: int {PK}
++ name: string
++ location: string" shape=rectangle]
+	Customer -> Ticket [label="1:M"]
+	Ticket -> Movie [label="M:1"]
+	Movie -> Theater [label="M:1"]
+}

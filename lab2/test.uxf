@@ -1,0 +1,31 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>350</y><w>210</w><h>90</h></coordinates><panel_attributes>Theater
+--
+
+_name : string _
+capacaty : int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>110</y><w>210</w><h>70</h></coordinates><panel_attributes>Movie
+--
+_imdb_key : Text_
+run_time : Double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>210</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;weak&gt;&gt;
+Preformance
+--
+
+start_time</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>270</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=1 *
+m2=0..n</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>400</y><w>210</w><h>100</h></coordinates><panel_attributes>Costumer
+--
+
+_user_name : Text _
+full_name : Text
+password : Text</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>250</y><w>210</w><h>70</h></coordinates><panel_attributes>Ticket
+--
+_ticket_id : Doubel_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>260</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1 *
+
+</panel_attributes><additional_attributes>170;20;10;20;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>170</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1 *</panel_attributes><additional_attributes>170;80;10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>310</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..n *</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element></diagram>
